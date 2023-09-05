@@ -1,0 +1,34 @@
+nohup: ignoring input
+drop number: 2
+chip size: 10 * 10
+FOV size: 5
+Namespace(name='dmfb', seed=12, alg='vdn', last_action=True, reuse_network=True, gamma=0.99, cuda=True, optimizer='ADAM', evaluate_task=100, model_dir='./model', result_dir='./TrainResult', load_model=False, load_model_name='', stall=True, drop_num=2, block_num=2, net='crnn', fov=5, width=10, length=10, version=None, n_steps=1300000, ith_run=1, replay_dir='', evaluate_cycle=100000, online_eval=True, rnn_hidden_dim=128, qmix_hidden_dim=32, two_hyper_layers=True, hyper_hidden_dim=32, lr=0.0005, n_episodes=5, epsilon=1, min_epsilon=0.05, anneal_steps=100000, epsilon_anneal_scale='step', train_time=1, batch_size=128, buffer_size=5000, target_update_cycle=200, grad_norm_clip=10)
+Init alg VDN
+Init RolloutWorker
+Run 1, time_steps 0, evaluate 0 3.0994415283203125e-06
+13.931159973144531
+Run 1, time_steps 100040, evaluate 1 325.82139229774475
+9.26778244972229
+Run 1, time_steps 200061, evaluate 2 703.5552082061768
+7.204789161682129
+Run 1, time_steps 300078, evaluate 3 1107.818655014038
+6.673123598098755
+Run 1, time_steps 400001, evaluate 4 1511.673270702362
+6.2984702587127686
+Run 1, time_steps 500054, evaluate 5 1917.2374699115753
+7.251611232757568
+Run 1, time_steps 600019, evaluate 6 2270.003297328949
+8.421150922775269
+Run 1, time_steps 700083, evaluate 7 2598.654999732971
+9.031647443771362
+Run 1, time_steps 800128, evaluate 8 2925.6057980060577
+9.863660097122192
+Run 1, time_steps 900115, evaluate 9 3238.684101343155
+10.895130395889282
+Run 1, time_steps 1000048, evaluate 10 3558.055403470993
+9.86098599433899
+Run 1, time_steps 1100037, evaluate 11 3874.478441953659
+11.293614864349365
+Run 1, time_steps 1200119, evaluate 12 4199.1061453819275
+11.776325464248657
+Run 1, time_steps 1300169, evaluate 13 4199.1061453819275

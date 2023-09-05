@@ -1,0 +1,48 @@
+nohup: ignoring input
+drop number: 2
+chip size: 10 * 10
+FOV size: 7
+Namespace(name='dmfb', seed=12, alg='vdn', last_action=True, reuse_network=True, gamma=0.99, cuda=True, optimizer='ADAM', evaluate_task=100, model_dir='./_model0.6', result_dir='./_TrainResult0.6', load_model=False, load_model_name='', stall=True, drop_num=2, block_num=0, net='crnn', fov=7, width=10, length=10, version='0.2', n_steps=2000000, ith_run=1, replay_dir='', evaluate_cycle=100000, online_eval=True, heal_init=0.6, rnn_hidden_dim=128, qmix_hidden_dim=32, two_hyper_layers=True, hyper_hidden_dim=32, lr=0.0005, n_episodes=5, epsilon=1, min_epsilon=0.05, anneal_steps=100000, epsilon_anneal_scale='step', train_time=1, batch_size=128, buffer_size=5000, target_update_cycle=200, grad_norm_clip=10)
+Init alg VDN
+Init RolloutWorker
+Run 1, time_steps 0, evaluate 0 6.4373016357421875e-06
+81.75278306007385
+Run 1, time_steps 100008, evaluate 1 1852.0881252288818
+64.35491251945496
+Run 1, time_steps 200025, evaluate 2 4052.9551606178284
+68.70757246017456
+Run 1, time_steps 300097, evaluate 3 6312.932321548462
+67.70211052894592
+Run 1, time_steps 400120, evaluate 4 8572.873534440994
+70.54526877403259
+Run 1, time_steps 500027, evaluate 5 10785.311515569687
+60.97865390777588
+Run 1, time_steps 600003, evaluate 6 13012.245407104492
+76.61856722831726
+Run 1, time_steps 700122, evaluate 7 15229.03294467926
+73.50379157066345
+Run 1, time_steps 800096, evaluate 8 17498.129658937454
+68.9468047618866
+Run 1, time_steps 900134, evaluate 9 19708.035201072693
+75.4751398563385
+Run 1, time_steps 1000136, evaluate 10 21883.88741016388
+72.6535496711731
+Run 1, time_steps 1100151, evaluate 11 24238.369220018387
+73.25941514968872
+Run 1, time_steps 1200103, evaluate 12 26621.54344344139
+69.70019197463989
+Run 1, time_steps 1300098, evaluate 13 29383.613275766373
+90.24344158172607
+Run 1, time_steps 1400077, evaluate 14 32030.855917453766
+72.23746418952942
+Run 1, time_steps 1500152, evaluate 15 34542.931890010834
+63.85625195503235
+Run 1, time_steps 1600108, evaluate 16 37008.89503836632
+68.20125961303711
+Run 1, time_steps 1700026, evaluate 17 39352.26278781891
+75.70951294898987
+Run 1, time_steps 1800022, evaluate 18 41629.762021541595
+74.17260932922363
+Run 1, time_steps 1900088, evaluate 19 43927.65161252022
+71.71466279029846
+Run 1, time_steps 2000162, evaluate 20 43927.65161252022

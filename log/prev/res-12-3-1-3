@@ -1,0 +1,26 @@
+nohup: ignoring input
+drop number: 3
+chip size: 10 * 10
+FOV size: 3
+Namespace(name='dmfb', seed=12, alg='vdn', last_action=True, reuse_network=True, gamma=0.99, cuda=True, optimizer='ADAM', evaluate_task=100, model_dir='./model', result_dir='./TrainResult', load_model=False, load_model_name='', stall=True, drop_num=3, block_num=2, net='crnn', fov=3, width=10, length=10, version=None, n_steps=1300000, ith_run=1, replay_dir='', evaluate_cycle=100000, online_eval=True, rnn_hidden_dim=128, qmix_hidden_dim=32, two_hyper_layers=True, hyper_hidden_dim=32, lr=0.0005, n_episodes=2, epsilon=1, min_epsilon=0.05, anneal_steps=100000, epsilon_anneal_scale='step', train_time=1, batch_size=128, buffer_size=5000, target_update_cycle=200, grad_norm_clip=9)
+Init alg VDN
+Init RolloutWorker
+Run 1, time_steps 0, evaluate 0 4.0531158447265625e-06
+Traceback (most recent call last):
+  File "/data/jc/code/rl4yx/train.py", line 171, in <module>
+    runner.run(online_evaluate=args.online_eval)
+  File "/data/jc/code/rl4yx/train.py", line 50, in run
+    average_episode_reward, average_episode_steps, average_episode_constraints, success_rate = self.rolloutWorker.evaluate(
+  File "/data/jc/code/rl4yx/common/rollout.py", line 80, in evaluate
+    episode_reward, total_step, total_constraints, success = self._generate_episode()
+  File "/data/jc/code/rl4yx/common/rollout.py", line 54, in _generate_episode
+    experience, info, last_action= self.one_step(obs,last_action)
+  File "/data/jc/code/rl4yx/common/rollout.py", line 23, in one_step
+    action = self.agents.choose_action(
+  File "/data/jc/code/rl4yx/agent/agent.py", line 41, in choose_action
+    q_value, self.policy.eval_hidden[:, agent_num, :] = self.policy.eval_rnn(inputs, hidden_state)
+  File "/data/jc/anaconda3/envs/rl/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/jc/code/rl4yx/network/base_net.py", line 54, in forward
+    pixel = pixel.reshape((-1, self.size*self.size*32))  # (batch,800) ?这个数是啥
+RuntimeError: shape '[-1, 288]' is invalid for input of size 32

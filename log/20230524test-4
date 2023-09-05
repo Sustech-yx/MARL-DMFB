@@ -1,0 +1,19 @@
+nohup: ignoring input
+drop number: 4
+chip size: 10 * 10
+FOV size: 7
+Namespace(name='dmfb', seed=12, alg='qmix', last_action=True, reuse_network=True, gamma=0.99, cuda=True, optimizer='ADAM', evaluate_task=100, model_dir='./model', result_dir='./TrainResult', load_model=False, load_model_name='', stall=True, drop_num=4, block_num=0, net='crnn', fov=7, width=10, length=10, version='0.2', state_shape=12, n_steps=10000000, ith_run=1, replay_dir='', evaluate_cycle=100000, online_eval=True, heal_init=1.0, rnn_hidden_dim=128, qmix_hidden_dim=32, two_hyper_layers=True, hyper_hidden_dim=32, lr=0.0005, n_episodes=2, epsilon=1, min_epsilon=0.05, anneal_steps=150000, epsilon_anneal_scale='step', train_time=1, batch_size=128, buffer_size=5000, target_update_cycle=200, grad_norm_clip=9)
+Init alg QMIX
+Init RolloutWorker
+Run 1, time_steps 0, evaluate 0 1.430511474609375e-06
+28.676358699798584
+Traceback (most recent call last):
+  File "/data/jc/code/rl4yx/train.py", line 170, in <module>
+    runner.run(online_evaluate=args.online_eval)
+  File "/data/jc/code/rl4yx/train.py", line 76, in run
+    self.agents.train(mini_batch, trained_times)
+  File "/data/jc/code/rl4yx/agent/agent.py", line 70, in train
+    self.policy.learn(batch, max_episode_len, train_step, epsilon)
+  File "/data/jc/code/rl4yx/policy/qmix.py", line 90, in learn
+    s, s_next, u, r, avail_u, avail_u_next, terminated = batch['s'], batch['s_next'], batch['u'], \
+KeyError: 's'
